@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="stylesc.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" href="slnavbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="loc.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="footer.css">
+    
+</head>
+<body>
+    <div class="navbarfix">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <div class="logo-container">
+                    <img src="loc.jpg" alt="Logo" class="logo">
+                    <span class="site-name">BEANS TALK</span>
+                </div>
+
+                <input type="checkbox" id="navbar-toggle" class="navbar-toggle-checkbox">
+
+                <label for="navbar-toggle" class="navbar-toggler-icon"></label>
+
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destination page.html">Branches</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Categories</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cappuccino.html">cappuccino</a></li>
+                                <li><a class="dropdown-item" href="Espresso.html">Espresso</a></li>
+                                <li><a class="dropdown-item" href="frappe.html">Frappe</a></li>
+                                <li><a class="dropdown-item" href="Cakes.html">Cakes</a></li>
+                                <li><a class="dropdown-item" href="Pastries.html">Pastries</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="d-flex" action="search_results.html" method="GET">
+                                <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search" required>
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+   <br>
+    <section>
+        <div>
+            <img src="coffee_shop.jpg" alt="featured" class="featured" >
+            
+        </div>
+    </section>
+    
+
+   
+    <section class="contact-intro">
+        <h3>Contact Form</h3>
+        <p>Send me your questions, comments, or suggestions!</p>
+        <p>If you'd like to work with me or you have a question or comment, you can contact me using the form below. You can also find 
+            <a href="about.html" class="highlight-link">more info about me here</a>.
+        </p>
+        <p>Sometimes I'm busy traveling, but I try to respond to any messages!</p>
+    </section>
+
+    
+
+  
+    <main>
+        <div class="form-box">
+            <form action="contact.php"  method="post" id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <label for="message">Your Message:</label>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" id="submitbutton">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <br> <br>
+
+    
+
+    <section class="contact">
+        <div>
+                <h1>Get In Touch</h1>
+                <p>Send me your questions, comments, or suggestions!
+                <img src="contact3.jpeg " ></p>
+            
+        </div>
+ 
+        <h2>Visit Us</h2>
+        <p><strong>Our Locations:</strong></p>
+        <p>📍 Colombo - 123 Coffee Street, Colombo 07</p>
+        <p>📍 Kandy - 45 Peradeniya Road, Kandy</p>
+        <p>📍 Galle - 67 Lighthouse Road, Galle Fort</p>
+        
+        <h2>Contact Details</h2>
+        <p>📞 Phone: +94 77 123 4567</p>
+        <p>📧 Email: hello@brewedblisscoffee.com</p>
+        <p>📅 Open Hours: Mon - Sun, 7:00 AM - 10:00 PM</p>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© Lochana's Travel Blog 2025</p>
+            <p>
+                <a href="#">Affiliate Disclosures</a> • 
+                <a href="#">Privacy Policy</a> • 
+                <a href="#">Terms Of Use</a>
+            </p>
+            <p>
+                Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, 
+                I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I 
+                feel are high quality and helpful to my readers. Thanks for your support!
+            </p>
+        </div>
+    </footer>
+    
+
+
+</body>
+</html>
