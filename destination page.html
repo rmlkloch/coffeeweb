@@ -9,9 +9,44 @@
     <link rel="stylesheet" href="imgg.css">
     <link rel="icon" href="loc.jpg" type="image/x-icon">
     <link rel="stylesheet" href="footer.css">
+    <style>
+        body { overflow-x: hidden; }
+        .image-container { text-align: center; position: relative; }
+        .image-container img { width: 100%; height: auto; }
+        .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .img { text-align: center; max-width: 300px; }
+        .img img { width: 100%; height: auto; border-radius: 10px; }
+        .featured { width: 100%; max-width: 1200px; display: block; margin: 0 auto; }
+        .site-footer { text-align: center; padding: 20px; background: #333; color: white; }
+        .site-footer a { color: lightgray; }
+        @media (max-width: 768px) {
+            .row { flex-direction: column; align-items: center; }
+            .img { width: 80%; }
+        }
+        .site-footer {
+    background-color: #000000;
+    padding: 20px; 
+    text-align: center;
+    font-size: 14px; 
+    color: #545354; 
+    border-top: 1px solid #464546; 
+}
 
-    <style>body{overflow-x: hidden;} </style>
+.site-footer a {
+    color: #ff982c; 
+    text-decoration: none; 
+    margin: 0 5px;
+}
 
+.site-footer a:hover {
+    text-decoration: underline; 
+}
+
+.site-footer p {
+    margin: 10px 0;
+}
+
+    </style>
 </head>
 <body>
     <div class="navbarfix">
@@ -61,40 +96,33 @@
             </div>
         </nav>
     </div>
-
     <div class="image-container">
-        <img src="img11.jpg" alt="Sample Image" class="centered-image">
+        <img src="img11.jpg" alt="Sample Image" style="max-width: 100%; height: auto;">
         <div class="centered-text">
-            <h1>Our Coffee Shop Branches</h1>
-            <p>Explore our locations across the country!</p>
+            <h1 style="line-height: 1;">Our Coffee Shop Branches</h1>
+            <p style="line-height: 1;">Explore our locations across the country!</p>
         </div>
     </div><br><br>
     <img src="featuredd.png" alt="featured" class="featured"><br><br><br>
-    
     <div>
         <div class="image-container">
             <div class="row">
                 <div class="img">
                     <a href="colombo.html"><img src="colombo.jpg" alt="Colombo Branch"></a>
-                    <p><h4>Colombo</h4></p>
+                    <h4>Colombo</h4>
                 </div>
                 <div class="img">
                     <a href="kandy.html"><img src="kandy.jpg" alt="Kandy Branch"></a>
-                    <p><a href="kandy.html"><h4>Kandy</h4></a></p>
+                    <h4><a href="kandy.html">Kandy</a></h4>
                 </div>
                 <div class="img">
                     <a href="galle.html"><img src="galle.jpg" alt="Galle Branch"></a>
-                    <p><a href="galle.html"><h4>Galle</h4></a></p>
+                    <h4><a href="galle.html">Galle</a></h4>
                 </div>
             </div>
-
-
-    
-
         </div>
     </div>
 </body>
-
 <footer class="site-footer">
     <div class="footer-content">
         <p>© Brewed Bliss Coffee Shop 2025</p>
@@ -110,4 +138,5 @@
         </p>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
